@@ -17,9 +17,14 @@ There are several reasons you might want to do this:
 
 ## How do I run SparkDistCP?
 
+Build a SparkDistCP fat jar using:
+```
+sbt assembly
+```
+
 You can run SparkDistCP from the command-line using:
 ```shell
-bin/spark-submit --packages com.coxautodata:spark-distcp_2.11:{{version}} --class com.coxautodata.SparkDistCP  "" --help
+bin/spark-submit --packages com.coxautodata:spark-distcp-assembly_2.11:{{version}} --class com.coxautodata.SparkDistCP  "" --help
 ```
 
 The empty string is needed here as `spark-submit` requires an application Jar to be specified however the Main class is in the dependency specified in `packages`.

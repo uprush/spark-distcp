@@ -2,14 +2,14 @@ import sbt.Keys.{developers, fork, homepage, scalaVersion, scmInfo}
 import sbt.url
 import xerial.sbt.Sonatype._
 
-lazy val scala212 = "2.12.8"
+lazy val scala212 = "2.12.10"
 lazy val scala211 = "2.11.12"
 lazy val supportedScalaVersions = List(scala212, scala211)
 
 ThisBuild / scalaVersion := scala211
 ThisBuild / organization := "com.coxautodata"
 
-val sparkVersion = "2.4.3"
+val sparkVersion = "2.4.5"
 val scoptVersion = "3.5.0"
 val scalatestVersion = "3.0.5"
 
